@@ -1,0 +1,41 @@
+<resources>
+    <!-- Title for the application. [CHAR LIMIT=12] -->
+    <string name="app_name">Digital Logic </string>
+
+    <!-- Category name for phrases [CHAR LIMIT=20] -->
+    <!-- <string name="category_phrases">Phrases</string>-->
+
+    <!--  Category name for the vocabulary words for colors [CHAR LIMIT=20]-->
+    <!--  <string name="category_colors">Colors</string>-->
+
+    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
+    <!-- <string name="category_numbers">Numbers</string>-->
+
+    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+    <!--<string name="category_family">Family Members</string>-->
+
+    <!-- selection for number system -->
+    <string-array name="Select_NS">
+        <item>Decimal</item>
+        <item>Binary</item>
+        <item>HexaDecimal</item>
+        <item>Octal</item>
+    </string-array>
+    <string-array name="Select_ff">
+        <item>Select</item>
+        <item>S-R</item>
+        <item>J-K</item>
+        <item>D</item>
+        <item>T</item>
+    </string-array>
+    <string-array name="Select_cc">
+        <item>Select</item>
+        <item>decimal</item>
+        <item>bcd(8421)</item>
+        <item>2421</item>
+        <item>84-2-1</item>
+        <item>excess-3</item>
+        <item>gray code</item>
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

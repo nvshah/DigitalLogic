@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    android:orientation="vertical"
+
+    tools:context="com.example.nipun.myapp1.MainActivity">
+
+    <TextView
+        android:id="@+id/family"
+        style="@style/CategoryStyle"
+        android:background="@color/category_family"
+        android:text="Flip Flop " />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_marginTop="34dp"
+        android:textSize="17sp"
+        android:text="Select  Flip flop:" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_marginTop="34dp"
+            android:textSize="17sp"
+            android:text="Convert  To:" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="20dp"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/inputText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_marginTop="34dp"
+
+            android:textSize="17sp"
+            android:text="select i/p "
+             />
+        <EditText
+            android:id="@+id/ffinput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/inputText"
+            android:ems="1"
+            android:maxLength="1"
+            android:inputType="number"
+            />
+        <EditText
+            android:id="@+id/ffinput1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/ffinput"
+            android:ems="1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:text="-1"
+            />
+        <TextView
+            android:id="@+id/ip2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_marginTop="34dp"
+            android:textSize="17sp"
+            android:layout_marginLeft="19dp"
+            android:layout_toRightOf="@+id/ffinput1"
+            android:text="Give State"
+            />
+        <EditText
+            android:id="@+id/psinput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="4dp"
+            android:ems="1"
+            android:layout_toRightOf="@+id/ip2"
+            android:inputType="number"
+            android:maxLength="1"
+            />
+
+        <Button
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:layout_marginTop="90dp"
+            android:layout_centerHorizontal="true"
+            android:onClick="calculateFF"
+            />
+        <TextView
+            android:id="@+id/invalid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(i - INVALID)"
+            android:layout_toRightOf="@id/done"
+            android:layout_below="@id/ip2"
+            android:layout_marginTop="19dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="17sp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/outputText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_marginTop="34dp"
+            android:textSize="17sp"
+            />
+
+
+
+
+</LinearLayout>
